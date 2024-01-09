@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pp_heig_simulation &#8212; HEIG-VD IE Package Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../_static/documentation_options.js?v=292eb321"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pp_heig_simulation';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">HEIG-VD IE Package Documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../modules.html">
+                        pandapower HEIG-VD UI Modules
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../modules.html">
+                        pandapower HEIG-VD UI Modules
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">pp_heig_simulation</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pp_heig_simulation</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Import package</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">coloredlogs</span>
+<span class="kn">import</span> <span class="nn">traceback</span>
+<span class="kn">import</span> <span class="nn">openpyxl</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">import</span> <span class="nn">pandapower</span> <span class="k">as</span> <span class="nn">pp</span>
+<span class="kn">import</span> <span class="nn">pandapower.control</span> <span class="k">as</span> <span class="nn">control</span>
+<span class="kn">import</span> <span class="nn">pandapower.timeseries</span> <span class="k">as</span> <span class="nn">timeseries</span>
+<span class="kn">from</span> <span class="nn">pandapower.timeseries.data_sources.frame_data</span> <span class="kn">import</span> <span class="n">DFData</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">coloredlogs</span><span class="o">.</span><span class="n">install</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="s2">&quot;INFO&quot;</span><span class="p">)</span>
+
+<span class="c1"># TODO: (Deadline -- 2023-09-12) Deploy some useful examples on function that students will use (only those ones).</span>
+<span class="c1">#       Develop a deep understanding of LTI&#39;s function and apply them in the tutorial notebook for next week.</span>
+<div class="viewcode-block" id="load_net_from_xlsx">
+<a class="viewcode-back" href="../pp_heig_simulation.html#pp_heig_simulation.load_net_from_xlsx">[docs]</a>
+<span class="k">def</span> <span class="nf">load_net_from_xlsx</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Create a pandaPower network object using data stored in a xlsx file. </span>
+<span class="sd">    </span>
+<span class="sd">    Pay attention to the following points:</span>
+
+<span class="sd">    - Xlsx file template should be the one provided in the `package repository &lt;https://github.com/heig-vd-iese/pandapower-heig-ui/tree/main/template&gt;`_.</span>
+<span class="sd">    - Every column marked in green is mandatory.</span>
+<span class="sd">    - Every column marked in yellow is mandatory for single phase short-circuit simulation.</span>
+<span class="sd">    - Every column marked in red is mandatory to map loads and generators to their timeseries power profile timeseries powerflow simulation.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    file_path : str</span>
+<span class="sd">        File path of the xlsx file where the power network data are stored.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        Create pandaPower object from xlsx file.</span>
+
+<span class="sd">    Example</span>
+<span class="sd">    -------</span>
+<span class="sd">    &gt;&gt;&gt; pp.pandapowerNet = load_net_from_xlsx(file_path=&quot;net_file_path.xlsx&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Columns which have to be set by default when None value is founded</span>
+    <span class="n">default_values</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;in_service&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;g_us_per_km&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;g0_us_per_km&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;r0_ohm_per_km&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;x0_ohm_per_km&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+        <span class="s2">&quot;c0_nf_per_km&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;parallel&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;df&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;p_mw&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;q_mvar&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;const_z_percent&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+        <span class="s2">&quot;const_i_percent&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;scaling&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;vk0_percent&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;vkr0_percent&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;mag0_percent&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+        <span class="s2">&quot;mag0_rx&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;si0_hv_partial&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;shift_degree&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;tap_step_percent&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;tap_phase_shifter&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;tap_step_degree&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;vm_pu&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;va_degree&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;slack_weight&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;tap_pos&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;tap_neutral&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;tap_min&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;tap_max&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;profile_mapping&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;current_source&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Columns which as to be converted to another type</span>
+    <span class="n">int_column</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">,</span> <span class="s2">&quot;parallel&quot;</span><span class="p">,</span> <span class="s2">&quot;from_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;to_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;element&quot;</span><span class="p">,</span> <span class="s2">&quot;hv_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;lv_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;tap_pos&quot;</span><span class="p">,</span>
+                             <span class="s2">&quot;tap_neutral&quot;</span><span class="p">,</span> <span class="s2">&quot;tap_min&quot;</span><span class="p">,</span> <span class="s2">&quot;tap_max&quot;</span><span class="p">,</span> <span class="s2">&quot;profile_mapping&quot;</span><span class="p">]</span>
+    <span class="n">bool_column</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;current_source&quot;</span><span class="p">,</span> <span class="s2">&quot;in_service&quot;</span><span class="p">]</span>
+    <span class="n">float_columns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;length_km&quot;</span><span class="p">,</span> <span class="s2">&quot;r_ohm_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;x_ohm_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;c_nf_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;max_i_ka&quot;</span><span class="p">,</span> <span class="s2">&quot;sn_mva&quot;</span><span class="p">,</span> <span class="s2">&quot;vn_hv_kv&quot;</span><span class="p">,</span> <span class="s2">&quot;vn_lv_kv&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;vk_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;vkr_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;pfe_kw&quot;</span><span class="p">,</span> <span class="s2">&quot;i0_percent&quot;</span><span class="p">,</span><span class="s2">&quot;g_us_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;g0_us_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;r0_ohm_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;x0_ohm_per_km&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;c0_nf_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;df&quot;</span><span class="p">,</span> <span class="s2">&quot;p_mw&quot;</span><span class="p">,</span> <span class="s2">&quot;q_mvar&quot;</span><span class="p">,</span> <span class="s2">&quot;const_z_percent&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;const_i_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;scaling&quot;</span><span class="p">,</span> <span class="s2">&quot;vk0_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;vkr0_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;mag0_percent&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mag0_rx&quot;</span><span class="p">,</span> <span class="s2">&quot;si0_hv_partial&quot;</span><span class="p">,</span> <span class="s2">&quot;shift_degree&quot;</span><span class="p">,</span> <span class="s2">&quot;tap_step_percent&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="n">non_null_columns</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;bus&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;vn_kv&quot;</span><span class="p">],</span> 
+        <span class="s2">&quot;line&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;from_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;to_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;length_km&quot;</span><span class="p">,</span> <span class="s2">&quot;r_ohm_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;x_ohm_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;c_nf_per_km&quot;</span><span class="p">,</span> <span class="s2">&quot;max_i_ka&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;switch&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">,</span> <span class="s2">&quot;element&quot;</span><span class="p">,</span> <span class="s2">&quot;et&quot;</span><span class="p">,</span> <span class="s2">&quot;closed&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;trafo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;hv_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;lv_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;sn_mva&quot;</span><span class="p">,</span> <span class="s2">&quot;vn_hv_kv&quot;</span><span class="p">,</span> <span class="s2">&quot;vn_lv_kv&quot;</span><span class="p">,</span> <span class="s2">&quot;vk_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;vkr_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;pfe_kw&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;i0_percent&quot;</span><span class="p">,</span> <span class="s2">&quot;vector_group&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;ext_grid&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;sgen&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">,</span> <span class="s2">&quot;p_mw&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;load&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="n">bus_column</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;line&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;from_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;to_bus&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;trafo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;hv_bus&quot;</span><span class="p">,</span> <span class="s2">&quot;lv_bus&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;ext_grid&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;sgen&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;load&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="c1"># Create empty network</span>
+    <span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">create_empty_network</span><span class="p">()</span>
+    <span class="n">eq_names</span> <span class="o">=</span> <span class="n">openpyxl</span><span class="o">.</span><span class="n">load_workbook</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span><span class="o">.</span><span class="n">sheetnames</span>
+    <span class="n">eq_names</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;bus&quot;</span><span class="p">)</span>
+    <span class="n">eq_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">eq_names</span>
+    <span class="c1"># Open Excel file and iterate over every existing sheet table</span>
+    <span class="k">for</span> <span class="n">eq_name</span> <span class="ow">in</span> <span class="n">eq_names</span><span class="p">:</span>
+        <span class="c1"># Create a dataFrame form an Excel sheet table</span>
+        <span class="n">data_df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="n">eq_name</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;idx&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data_df</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+            <span class="c1"># Fill null values using default_values dictionary</span>
+            <span class="n">data_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">default_values</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="c1"># Fill bus and load types</span>
+            <span class="k">if</span> <span class="n">eq_name</span> <span class="o">==</span> <span class="s2">&quot;bus&quot;</span><span class="p">:</span>
+                <span class="n">data_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">eq_name</span> <span class="o">==</span> <span class="s2">&quot;load&quot;</span><span class="p">:</span>
+                <span class="n">data_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;wye&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">eq_name</span> <span class="o">==</span> <span class="s2">&quot;line_geodata&quot;</span><span class="p">:</span>
+                <span class="c1"># Create list of coordinates from string</span>
+                <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;coords&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">coords</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">y</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)],</span>
+                                       <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;[[&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;]]&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;], [&quot;</span><span class="p">))))</span>
+            <span class="c1"># Change needed columns type from float to int64</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">int_column</span><span class="p">)):</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span>
+                <span class="k">except</span><span class="p">(</span><span class="ne">Exception</span><span class="p">,</span> <span class="p">):</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Impossible to convert </span><span class="si">{}</span><span class="s2"> column into integer in </span><span class="si">{}</span><span class="s2"> equipment.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">eq_name</span><span class="p">))</span>
+                        <span class="c1"># Change needed columns type from float to int64</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">float_columns</span><span class="p">)):</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+                <span class="k">except</span><span class="p">(</span><span class="ne">Exception</span><span class="p">,</span> <span class="p">):</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Impossible to convert </span><span class="si">{}</span><span class="s2"> column into float in </span><span class="si">{}</span><span class="s2"> equipment.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">eq_name</span><span class="p">))</span>
+            <span class="c1"># Change needed columns type from float to bool</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">bool_column</span><span class="p">)):</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
+                <span class="k">except</span><span class="p">(</span><span class="ne">Exception</span><span class="p">,</span> <span class="p">):</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Impossible to convert </span><span class="si">{}</span><span class="s2"> column into boolean in </span><span class="si">{}</span><span class="s2"> equipment.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">eq_name</span><span class="p">))</span>
+    
+            <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+            <span class="c1"># Replace np.nan to None</span>
+            <span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+            <span class="c1"># Check if non-null columns have null^values</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">non_null_columns</span><span class="p">[</span><span class="n">eq_name</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Null values founded in </span><span class="si">{}</span><span class="s2"> column in </span><span class="si">{}</span><span class="s2"> equipment.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">eq_name</span><span class="p">))</span>
+
+            <span class="k">if</span> <span class="n">eq_name</span> <span class="o">==</span> <span class="s2">&quot;trafo&quot;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;vk_percent&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;vkr_percent&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;At least one vkr_percent is gater than vk_percent&quot;</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;pfe_kw&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">*</span>  <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;sn_mva&quot;</span><span class="p">]</span> <span class="o">*</span>  <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;i0_percent&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;At least one pfe_kw is gater than i0_percent&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">eq_name</span> <span class="o">!=</span> <span class="s2">&quot;bus&quot;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">(</span><span class="o">~</span><span class="n">data_df</span><span class="p">[</span><span class="n">bus_column</span><span class="p">[</span><span class="n">eq_name</span><span class="p">]]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">net</span><span class="p">[</span><span class="s2">&quot;bus&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)))</span><span class="o">.</span><span class="n">any</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;At least one bus index in </span><span class="si">{}</span><span class="s2"> equipment is not correct&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">eq_name</span><span class="p">))</span>
+            <span class="c1"># Create pandapower network</span>
+            <span class="n">net</span><span class="p">[</span><span class="n">eq_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span>
+    <span class="k">return</span> <span class="n">net</span></div>
+
+
+
+<div class="viewcode-block" id="load_power_profile_form_xlsx">
+<a class="viewcode-back" href="../pp_heig_simulation.html#pp_heig_simulation.load_power_profile_form_xlsx">[docs]</a>
+<span class="k">def</span> <span class="nf">load_power_profile_form_xlsx</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> \
+        <span class="p">(</span><span class="nb">dict</span><span class="p">)[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Load power profile from a xlsx file and return a dictionary of pandas DataFrame ready to be applied to a pandaPower network for timeseries simulations.</span>
+<span class="sd">    </span>
+<span class="sd">    The function also interpolate power profiles in order they all have the same time steps.</span>
+<span class="sd">    Note that the function is only able to load one-day power profiles.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    file_path : str</span>
+<span class="sd">        File path of the xlsx file where the power network data are stored.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    power_profile : dict[str, dict[str, pd.DataFrame]]</span>
+<span class="sd">        Power profiles stored in dictionary of pandas DataFrame format.</span>
+
+<span class="sd">    Example</span>
+<span class="sd">    -------</span>
+<span class="sd">    &gt;&gt;&gt; load_power_profile_form_xlsx(file_path=&quot;profile_file_path&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Initialize power profiles dictionaries</span>
+    <span class="n">power_profile</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="n">results</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+    <span class="c1"># Initialize times which will be used to interpolate power profiles</span>
+    <span class="n">period</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">59</span><span class="p">)</span>
+
+    <span class="c1"># Load every Excel sheet names</span>
+    <span class="k">for</span> <span class="n">eq_name</span> <span class="ow">in</span> <span class="n">openpyxl</span><span class="o">.</span><span class="n">load_workbook</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span><span class="o">.</span><span class="n">sheetnames</span><span class="p">:</span>
+        <span class="c1"># Create a dataFrame form an Excel sheet table</span>
+        <span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span>
+            <span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="n">eq_name</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="c1"># If there is no data within the Excel sheet don&#39;t save the dataFrame</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data_df</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+            <span class="c1"># Save DataFrame in power profile dictionary  </span>
+            <span class="n">power_profile</span><span class="p">[</span><span class="n">eq_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span>
+
+            <span class="c1"># Find the most suitable common period, start time and end time</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="n">time</span><span class="p">:</span>
+                    <span class="n">date_time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="p">),</span> <span class="nb">format</span><span class="o">=</span> <span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>    
+                    <span class="n">date_time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">(),</span> <span class="n">x</span><span class="p">))</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Time column is not in a suitable format. Please use a time (HH:MM:SS) format in excel sheet&quot;</span><span class="p">)</span>
+                
+            <span class="n">period</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">period</span><span class="p">,</span> <span class="n">date_time</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+            <span class="n">start_time</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">start_time</span><span class="p">,</span> <span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">end_time</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">end_time</span><span class="p">,</span> <span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="c1"># Create common datetime index for every power profiles</span>
+    <span class="n">datetime_index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span>
+            <span class="n">start</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">(),</span> <span class="n">start_time</span><span class="p">),</span>
+            <span class="n">end</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">(),</span> <span class="n">end_time</span><span class="p">),</span>
+            <span class="n">freq</span><span class="o">=</span><span class="n">period</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">to_pydatetime</span><span class="p">())</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">time</span><span class="p">())</span>
+
+    <span class="c1"># Create a dataframe with common time and its corresponding timestamp number</span>
+    <span class="n">datetime_inter</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+        <span class="nb">range</span><span class="p">(</span><span class="n">datetime_index</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">index</span><span class="o">=</span><span class="n">datetime_index</span><span class="p">,</span>
+        <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">eq_name</span><span class="p">,</span> <span class="n">eq_power</span> <span class="ow">in</span> <span class="n">power_profile</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="c1"># Create multi index columns from power profile</span>
+        <span class="n">columns</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span>
+            <span class="n">eq_power</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;profile&quot;</span><span class="p">,</span> <span class="s2">&quot;power&quot;</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="c1"># Concatenate power profile with created common datetime index</span>
+        <span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">datetime_inter</span><span class="p">,</span> <span class="n">eq_power</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+        <span class="c1"># Fill timestamps unmatched using closest neighbors (forward and backward in order to fill every null)</span>
+        <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;ffill&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;bfill&#39;</span><span class="p">)</span>
+        <span class="c1"># Group timestamp to keep only the first founded non-null value and then fill null values using</span>
+        <span class="c1"># first order interpolation</span>
+        <span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span> \
+            <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span> \
+            <span class="o">.</span><span class="n">interpolate</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;bfill&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;ffill&quot;</span><span class="p">)</span> \
+            <span class="c1"># Create interpolated dataframe with good index and apply into results dictionary</span>
+        <span class="n">actual_profile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+            <span class="n">data_df</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">datetime_inter</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span>
+        <span class="p">)</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">eq_name</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s2">&quot;P [MW]&quot;</span> <span class="ow">in</span> <span class="n">eq_power</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">levels</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">results</span><span class="p">[</span><span class="n">eq_name</span><span class="p">][</span><span class="s2">&quot;p_mw&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">actual_profile</span><span class="o">.</span><span class="n">xs</span><span class="p">(</span><span class="s2">&quot;P [MW]&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s2">&quot;Q [MVAR]&quot;</span> <span class="ow">in</span> <span class="n">eq_power</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">levels</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">results</span><span class="p">[</span><span class="n">eq_name</span><span class="p">][</span><span class="s2">&quot;q_mvar&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">actual_profile</span><span class="o">.</span><span class="n">xs</span><span class="p">(</span><span class="s2">&quot;Q [MVAR]&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">results</span></div>
+
+
+
+<div class="viewcode-block" id="apply_power_profile">
+<a class="viewcode-back" href="../pp_heig_simulation.html#pp_heig_simulation.apply_power_profile">[docs]</a>
+<span class="k">def</span> <span class="nf">apply_power_profile</span><span class="p">(</span><span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">equipment</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">power_profiles</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">]):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply power profiles stored in dictionary of a pandas `DataFrame` format to a pandapower network in order to perform a `pandapower time simulation powerflow docs &lt;https://pandapower.readthedocs.io/en/v2.13.1/powerflow.html&gt;`_.</span>
+<span class="sd">    </span>
+<span class="sd">    The function creates `pandapower Controller &lt;https://pandapower.readthedocs.io/en/v2.13.1/control/controller.html#constcontrol&gt;`_ for each DataFrame found in power_profiles input.</span>
+<span class="sd">    Note that if the network already contains controllers linked to the equipment input, the function will first erase them.</span>
+<span class="sd">    In order to apply wanted power profiles to wanted element, use `profile_mapping` column found in load and `sgen` equipments.</span>
+
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        pandapower network object</span>
+<span class="sd">    equipment : str</span>
+<span class="sd">        The equipment name in which power profiles will be applied (`load`, `sgen`).</span>
+<span class="sd">    power_profiles : dict[str, pd.DataFrame]</span>
+<span class="sd">        These are power profiles stored in a dictionary in `DataFrame` pandas format.</span>
+<span class="sd">        The keys of the dictionary correspond to the power parameter of equipments (`p_mw`, `q_mvar`).</span>
+
+<span class="sd">    Example</span>
+<span class="sd">    -------</span>
+<span class="sd">    &gt;&gt;&gt; apply_power_profile(net=net, equipment=&quot;load&quot;, power_profiles=timeseries[&quot;load&quot;])</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">PerformanceWarning</span><span class="p">)</span>
+    <span class="c1"># Check if pandapower network already have controllers for the given equipment and delete them</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">net</span><span class="o">.</span><span class="n">controller</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="n">old_controller_index</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">controller</span><span class="p">[</span><span class="n">net</span><span class="o">.</span><span class="n">controller</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">element</span><span class="p">)</span> <span class="o">==</span> <span class="n">equipment</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+        <span class="n">net</span><span class="o">.</span><span class="n">controller</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">controller</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">old_controller_index</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># Create a dictionary from profile_mapping column</span>
+    <span class="n">profile_mapping</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">net</span><span class="p">[</span><span class="n">equipment</span><span class="p">]</span> \
+        <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span> \
+        <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;profile_mapping&quot;</span><span class="p">)[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> \
+        <span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">variable</span><span class="p">,</span> <span class="n">profile</span> <span class="ow">in</span> <span class="n">power_profiles</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">profile</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># TODO: description to be done</span>
+            <span class="k">if</span> <span class="s2">&quot;time_index&quot;</span> <span class="ow">in</span> <span class="n">net</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">net</span><span class="p">[</span><span class="s2">&quot;time_index&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">profile</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Time&quot;</span><span class="p">]))</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+                    <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Simulation Profiles have not the same timestamps&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">net</span><span class="p">[</span><span class="s2">&quot;time_index&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">profile</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Time&quot;</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">profile_mapping</span><span class="p">:</span>
+                <span class="n">mapped_profile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">profile</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">profile_id</span><span class="p">,</span> <span class="n">eq_list</span> <span class="ow">in</span> <span class="n">profile_mapping</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">profile_id</span> <span class="ow">in</span> <span class="n">profile</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+                        <span class="n">mapped_profile</span><span class="p">[</span><span class="n">eq_list</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">profile</span><span class="p">[</span><span class="n">profile_id</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">eq_list</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">mapped_profile</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="n">net</span><span class="p">[</span><span class="n">equipment</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">profile</span><span class="o">.</span><span class="n">columns</span><span class="p">)]</span>
+            <span class="n">unmapped_equipment</span> <span class="o">=</span> <span class="n">net</span><span class="p">[</span><span class="n">equipment</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">mapped_profile</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">unmapped_equipment</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">unmapped_eq_names</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">net</span><span class="p">[</span><span class="n">equipment</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">unmapped_equipment</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+                <span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> equipments have no </span><span class="si">{}</span><span class="s2"> profiles&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">unmapped_eq_names</span><span class="p">,</span> <span class="n">variable</span><span class="p">))</span>
+            <span class="n">mapped_profile</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="n">control</span><span class="o">.</span><span class="n">ConstControl</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">element</span><span class="o">=</span><span class="n">equipment</span><span class="p">,</span> <span class="n">element_index</span><span class="o">=</span><span class="n">mapped_profile</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
+                                 <span class="n">variable</span><span class="o">=</span><span class="n">variable</span><span class="p">,</span> <span class="n">data_source</span><span class="o">=</span><span class="n">DFData</span><span class="p">(</span><span class="n">mapped_profile</span><span class="p">),</span>
+                                 <span class="n">profile_name</span><span class="o">=</span><span class="n">mapped_profile</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+    <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">PerformanceWarning</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="create_output_writer">
+<a class="viewcode-back" href="../pp_heig_simulation.html#pp_heig_simulation.create_output_writer">[docs]</a>
+<span class="k">def</span> <span class="nf">create_output_writer</span><span class="p">(</span><span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">add_results</span><span class="p">:</span> <span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Define which results will be stored as output.</span>
+<span class="sd">    </span>
+<span class="sd">    The function create a `pandapower OutputWriter &lt;https://pandapower.readthedocs.io/en/v2.13.1/timeseries/output_writer.html&gt;`_ with the following default outputs:</span>
+
+<span class="sd">    - `res_bus.vm_pu`</span>
+<span class="sd">    - `res_line.loading_percent`</span>
+<span class="sd">    - `res_trafo.loading_percent`</span>
+
+<span class="sd">    Other needed outputs could be added using add_results parameters.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        Specify a pandapower network object.</span>
+<span class="sd">    add_results : [list[str] | str], None</span>
+<span class="sd">        Store the additional simulation results as output.</span>
+
+<span class="sd">    Example</span>
+<span class="sd">    -------</span>
+<span class="sd">    &gt;&gt;&gt; create_output_writer(net=pp.pandapowerNet)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">add_results</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">add_results</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;res_trafo.loading_percent&quot;</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">add_results</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span><span class="n">add_results</span><span class="p">,</span> <span class="s2">&quot;res_trafo.loading_percent&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;res_trafo.loading_percent&quot;</span><span class="p">]</span>
+
+    <span class="n">ow</span> <span class="o">=</span> <span class="n">timeseries</span><span class="o">.</span><span class="n">OutputWriter</span><span class="p">(</span><span class="n">net</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+        <span class="n">ow</span><span class="o">.</span><span class="n">log_variable</span><span class="p">(</span><span class="o">*</span><span class="n">result</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span></div>
+
+
+
+<div class="viewcode-block" id="run_time_simulation">
+<a class="viewcode-back" href="../pp_heig_simulation.html#pp_heig_simulation.run_time_simulation">[docs]</a>
+<span class="k">def</span> <span class="nf">run_time_simulation</span><span class="p">(</span><span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">output_filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                        <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;output&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">]:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Run a time-series power flow on a pandaPower network where power profiles has been applied to the load and the generators.</span>
+<span class="sd">    </span>
+<span class="sd">    The results will then be converted into a dictionary of `DataFrames` and saved to an Excel file if desired.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        Specify a pandapower network object containing two elements:</span>
+<span class="sd">        `Controller &lt;https://pandapower.readthedocs.io/en/v2.13.1/control/controller.html#constcontrol&gt;`_;</span>
+<span class="sd">        `OutputWriter &lt;https://pandapower.readthedocs.io/en/v2.13.1/timeseries/output_writer.html&gt;`_.</span>
+<span class="sd">    output_filename : str, None</span>
+<span class="sd">        Write the name of the `.xlsx` file where the simulation results will be stored.</span>
+<span class="sd">        If this parameter is not filled, the function will not save the results.</span>
+<span class="sd">    folder : str, &quot;output&quot;</span>
+<span class="sd">        It is the folder name where results will be stored.</span>
+
+<span class="sd">    Example</span>
+<span class="sd">    -------</span>
+<span class="sd">    &gt;&gt;&gt; run_time_simulation(net=net, folder=&quot;.cache&quot;, output_filename=&quot;output_filename&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">timeseries</span><span class="o">.</span><span class="n">run_timeseries</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">time_steps</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">net</span><span class="p">[</span><span class="s2">&quot;time_index&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">results_df</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">net</span><span class="o">.</span><span class="n">output_writer</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;object&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="o">!=</span> <span class="s2">&quot;Parameters&quot;</span><span class="p">:</span>
+            <span class="n">results_df</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">net</span><span class="p">[</span><span class="s2">&quot;time_index&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">Time</span><span class="p">)</span>
+            <span class="n">eq</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;res_&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">name_mapping</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">net</span><span class="p">[</span><span class="n">eq</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">net</span><span class="p">[</span><span class="n">eq</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+            <span class="n">results_df</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">results_df</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">name_mapping</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">output_filename</span><span class="p">:</span>
+        <span class="n">output_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">output_filename</span> <span class="o">+</span> <span class="s2">&quot;.xlsx&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">folder</span><span class="p">)</span>
+            <span class="n">writer</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="n">output_file_path</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">keys</span> <span class="ow">in</span> <span class="n">results_df</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="n">results_df</span><span class="p">[</span><span class="n">keys</span><span class="p">]</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="n">keys</span><span class="p">,</span> <span class="n">index_label</span><span class="o">=</span><span class="s2">&quot;Time&quot;</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">(</span><span class="ne">Exception</span><span class="p">,):</span>
+            <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                <span class="s2">&quot;Error in </span><span class="si">{}</span><span class="s2"> function:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">traceback</span><span class="o">.</span><span class="n">extract_stack</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span>
+                <span class="s2">&quot;Impossible to save simulation results in </span><span class="si">{}</span><span class="s2"> file</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">output_file_path</span><span class="p">)</span> <span class="o">+</span>
+                <span class="s2">&quot;Check output file path or if file is already open in your computer&quot;</span>
+            <span class="p">)</span>
+    <span class="k">return</span> <span class="n">results_df</span></div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2023, HEIG-VD IE.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

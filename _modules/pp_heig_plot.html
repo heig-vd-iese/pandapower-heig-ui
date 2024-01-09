@@ -1,0 +1,913 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pp_heig_plot &#8212; HEIG-VD IE Package Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../_static/documentation_options.js?v=292eb321"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pp_heig_plot';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">HEIG-VD IE Package Documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../modules.html">
+                        pandapower HEIG-VD UI Modules
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../modules.html">
+                        pandapower HEIG-VD UI Modules
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">pp_heig_plot</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pp_heig_plot</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Import package</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">time</span>
+<span class="kn">import</span> <span class="nn">pandapower</span> <span class="k">as</span> <span class="nn">pp</span>
+<span class="kn">import</span> <span class="nn">pandapower.plotting.plotly</span> <span class="k">as</span> <span class="nn">pplotly</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">plotly.graph_objs</span> <span class="kn">import</span> <span class="n">Figure</span><span class="p">,</span> <span class="n">Layout</span>
+<span class="kn">from</span> <span class="nn">plotly.graph_objs.layout</span> <span class="kn">import</span> <span class="n">XAxis</span><span class="p">,</span> <span class="n">YAxis</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">coloredlogs</span>
+
+<span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">coloredlogs</span><span class="o">.</span><span class="n">install</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="s2">&quot;INFO&quot;</span><span class="p">)</span>
+
+<span class="c1"># TODO: (Deadline -- 2023-09-12) Deploy some useful examples on function that students will use (only those ones).</span>
+<span class="c1">#       Develop a deep understanding of LTI&#39;s function and apply them in the tutorial notebook for next week.</span>
+
+<div class="viewcode-block" id="plot_power_network">
+<a class="viewcode-back" href="../pp_heig_plot.html#pp_heig_plot.plot_power_network">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_power_network</span><span class="p">(</span><span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;plot&quot;</span><span class="p">,</span> <span class="n">plot_title</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                       <span class="n">line_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">trafo_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">bus_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">add_zone</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>  <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Plot the network scheme in a Plotly figure, displaying zones if wanted.</span>
+<span class="sd">    </span>
+<span class="sd">    If the network does not contain geo data, it will be automatically created using the `igraph library &lt;https://python.igraph.org/en/stable/&gt;`_.</span>
+<span class="sd">    Note that if the network does not contain geo data, it will be automatically created using the `igraph library &lt;https://python.igraph.org/en/stable/&gt;`_.</span>
+<span class="sd">    This algorithm does not generate good geo data if the network is meshed.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        pandaPower network object with powerflow results stored.</span>
+<span class="sd">        Powerflow simulations are described in `pandaPower powerflow docs &lt;https://pandapower.readthedocs.io/en/v2.13.1/powerflow.html&gt;`_.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    filename : str, None, optional</span>
+<span class="sd">        File name under which the plotly figure will be stored (in `png` format).</span>
+<span class="sd">        If this parameter is not filled, the function will only display the figure without saving it.</span>
+<span class="sd">    folder : str, &quot;plot&quot;, optional</span>
+<span class="sd">        Folder name where the plotly figure will be stored.</span>
+<span class="sd">    plot_title : str, None, optional</span>
+<span class="sd">        Title displayed on the top of the figure.</span>
+<span class="sd">    line_width : int, 3, optional</span>
+<span class="sd">        Transmission lines drawing width.</span>
+<span class="sd">    trafo_width : int, 7, optional</span>
+<span class="sd">        Transformers drawing width.</span>
+<span class="sd">    bus_size : int, 20, optional</span>
+<span class="sd">        Bus drawing size.</span>
+<span class="sd">    add_zone : bool, True, optional</span>
+<span class="sd">        If this parameter is set to true, buses will be colored based on the zone parameters.</span>
+<span class="sd">    **kwargs : dict</span>
+<span class="sd">        Every parameter found in save_fig function could also be added if needed.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">net_copy</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">net</span><span class="p">)</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">]</span>
+    <span class="c1"># Generate bus geodata if needed</span>
+    <span class="k">if</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="n">pplotly</span><span class="o">.</span><span class="n">create_generic_coordinates</span><span class="p">(</span><span class="n">net</span><span class="o">=</span><span class="n">net_copy</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">]]</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span> <span class="o">*=-</span><span class="mi">1</span>
+
+    <span class="n">traces</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># create lines trace</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_line_trace</span><span class="p">(</span><span class="n">net_copy</span><span class="p">,</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">line_width</span><span class="p">,</span>
+                                             <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Lines&quot;</span><span class="p">)</span>
+    <span class="c1"># Create transfo trace</span>
+    <span class="n">trafo_info</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">sn_mva</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; MVA&#39;</span>
+    <span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_trafo_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">trafos</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">trafo_width</span><span class="p">),</span> <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Transformers&quot;</span><span class="p">,</span>
+        <span class="n">infofunc</span> <span class="o">=</span> <span class="n">trafo_info</span>
+    <span class="p">)</span>
+    <span class="c1"># create ext_grid trace</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">patch_type</span><span class="o">=</span><span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mf">1.5</span><span class="o">*</span><span class="n">bus_size</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+        <span class="n">infofunc</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+        <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Ext grid&quot;</span>
+    <span class="p">)</span>
+    <span class="c1"># create bus trace</span>
+    <span class="n">bus_info</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">vn_kv</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; kV&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">add_zone</span><span class="p">:</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">zone</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">zone</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;Unknown&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">zone</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">zone</span><span class="o">.</span><span class="n">unique</span><span class="p">()):</span>
+            <span class="n">bus_index</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="p">[</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">zone</span> <span class="o">==</span> <span class="n">zone</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+            <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+                <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">bus_index</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">bus_size</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                <span class="n">infofunc</span><span class="o">=</span><span class="n">bus_info</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bus_index</span><span class="p">],</span>
+                <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Zone </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">zone</span><span class="p">)</span>
+            <span class="p">)</span>  <span class="c1"># create buses</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+            <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">bus_size</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+            <span class="n">infofunc</span><span class="o">=</span><span class="n">bus_info</span><span class="p">,</span>
+            <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Bus&quot;</span>
+        <span class="p">)</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">_draw_traces</span><span class="p">(</span><span class="n">traces</span><span class="o">=</span><span class="n">traces</span><span class="p">,</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">save_fig</span><span class="p">(</span><span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span> <span class="n">plot_title</span><span class="o">=</span><span class="n">plot_title</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="plot_powerflow_result">
+<a class="viewcode-back" href="../pp_heig_plot.html#pp_heig_plot.plot_powerflow_result">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_powerflow_result</span><span class="p">(</span>
+        <span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;plot&quot;</span><span class="p">,</span> <span class="n">plot_title</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">line_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">trafo_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">bus_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">voltage_cmap</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;jet&quot;</span><span class="p">,</span>
+        <span class="n">loading_cmap</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span>  <span class="s2">&quot;jet&quot;</span><span class="p">,</span> <span class="n">voltage_range</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.85</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">),</span>
+        <span class="n">loading_range</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">width</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span> <span class="mi">770</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Plot the network scheme in a Plotly figure, displaying the power flow results.</span>
+<span class="sd">    </span>
+<span class="sd">    The nodes are colored based on the resulting voltage level in p.u., the lines and transformers are colored based on their loading in %.</span>
+<span class="sd">    Note that if the network does not contain geo data, it will be automatically created using the `igraph library &lt;https://python.igraph.org/en/stable/&gt;`_.</span>
+<span class="sd">    This algorithm does not generate good geo data if the network is meshed.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        pandaPower network object with powerflow results stored.</span>
+<span class="sd">        Powerflow simulations are described in `pandaPower powerflow docs &lt;https://pandapower.readthedocs.io/en/v2.13.1/powerflow.html&gt;`_.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    filename : str, None, optional</span>
+<span class="sd">        File name under which the plotly figure will be stored (in `png` format).</span>
+<span class="sd">        If this parameter is not filled, the function will only display the figure without saving it.</span>
+<span class="sd">    folder : str, &quot;plot&quot;, optional</span>
+<span class="sd">        Folder name where the plotly figure will be stored.</span>
+<span class="sd">    plot_title : str, None, optional</span>
+<span class="sd">        Title displayed on the top of the figure.</span>
+<span class="sd">    line_width : int, 3, optional</span>
+<span class="sd">        Transmission lines drawing width.</span>
+<span class="sd">    trafo_width : int, 7, optional</span>
+<span class="sd">        Transformers drawing width.</span>
+<span class="sd">    bus_size : int, 20, optional</span>
+<span class="sd">        Bus drawing size.</span>
+<span class="sd">    voltage_cmap : str, &quot;jet&quot;, optional</span>
+<span class="sd">        Name of a plotly Continuous Color Scales used to display voltage results</span>
+<span class="sd">        (Greys, YlGnBu, Greens, YlOrRd, Bluered, RdBu, Reds, Blues, Picnic, Rainbow, Portland, Jet, Hot, Blackbody,</span>
+<span class="sd">        Earth, Electric, Viridis).</span>
+<span class="sd">        Further explanation are founded in `plotly docs &lt;https://plotly.com/python/builtin-colorscales/?_ga=2.67899217.1309821379.1693317794-265230606.1688628396&gt;`_.</span>
+<span class="sd">    loading_cmap : str, &quot;jet&quot;, optional</span>
+<span class="sd">        Name of a plotly Continuous Color Scales used to display line loading results.</span>
+<span class="sd">    voltage_range : tuple[float], (0.85, 1.15)</span>
+<span class="sd">        Voltage range used by the plotly continuous color scales (voltage units are in p.u.).</span>
+<span class="sd">    loading_range : tuple[float], (0, 100)</span>
+<span class="sd">        Voltage range used by the plotly continuous color scales (loading units are in %).</span>
+<span class="sd">    width : int, 770, optional</span>
+<span class="sd">        Plotly figure width.</span>
+<span class="sd">    **kwargs</span>
+<span class="sd">        Every parameter found in save_fig function could also be added if needed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">net_copy</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">net</span><span class="p">)</span>
+    <span class="n">traces</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Generate bus geodata if needed</span>
+    <span class="k">if</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="n">pplotly</span><span class="o">.</span><span class="n">create_generic_coordinates</span><span class="p">(</span><span class="n">net</span><span class="o">=</span><span class="n">net_copy</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">]]</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span> <span class="o">*=-</span><span class="mi">1</span>
+
+    <span class="n">trafo_info</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="s2">&quot;Loading: &quot;</span> <span class="o">+</span>
+             <span class="n">net_copy</span><span class="o">.</span><span class="n">res_trafo</span><span class="o">.</span><span class="n">loading_percent</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span> <span class="o">+</span> <span class="s1">&#39; %&#39;</span>
+    <span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_trafo_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">trafos</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">trafo_width</span><span class="p">,</span> <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Transformers&quot;</span><span class="p">,</span>
+        <span class="n">cmap</span><span class="o">=</span><span class="n">loading_cmap</span><span class="p">,</span> <span class="n">cmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cmax</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">infofunc</span><span class="o">=</span><span class="n">trafo_info</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">line_info</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">line</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="s2">&quot;Loading: &quot;</span> <span class="o">+</span>
+             <span class="n">net_copy</span><span class="o">.</span><span class="n">res_line</span><span class="o">.</span><span class="n">loading_percent</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span> <span class="o">+</span> <span class="s1">&#39; %&#39;</span>
+    <span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_line_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">loading_cmap</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">line_width</span><span class="p">,</span> <span class="n">cmin</span><span class="o">=</span><span class="n">loading_range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="n">cmax</span><span class="o">=</span><span class="n">loading_range</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">cpos</span><span class="o">=</span><span class="mf">1.15</span><span class="p">,</span> <span class="n">infofunc</span><span class="o">=</span><span class="n">line_info</span><span class="p">,</span> <span class="n">cbar_title</span><span class="o">=</span><span class="s1">&#39;Equipment loading [%]&#39;</span><span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">patch_type</span><span class="o">=</span><span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mf">1.5</span><span class="o">*</span><span class="n">bus_size</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+        <span class="n">infofunc</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+        <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Ext grid&quot;</span>
+    <span class="p">)</span>
+    <span class="n">bus_info</span> <span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="s2">&quot;V: &quot;</span> <span class="o">+</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">res_bus</span><span class="o">.</span><span class="n">vm_pu</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span> <span class="o">+</span> <span class="s1">&#39; pu&#39;</span>
+    <span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">voltage_cmap</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">bus_size</span><span class="p">,</span> <span class="n">cmin</span><span class="o">=</span><span class="n">voltage_range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="n">cmax</span><span class="o">=</span><span class="n">voltage_range</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">infofunc</span><span class="o">=</span><span class="n">bus_info</span><span class="p">,</span> <span class="n">cbar_title</span><span class="o">=</span><span class="s1">&#39;Bus voltage [pu]&#39;</span>
+    <span class="p">)</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">_draw_traces</span><span class="p">(</span><span class="n">traces</span><span class="p">,</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">save_fig</span><span class="p">(</span><span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span> <span class="n">plot_title</span><span class="o">=</span><span class="n">plot_title</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="plot_short_circuit_result">
+<a class="viewcode-back" href="../pp_heig_plot.html#pp_heig_plot.plot_short_circuit_result">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_short_circuit_result</span><span class="p">(</span>
+        <span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;plot&quot;</span><span class="p">,</span> <span class="n">plot_title</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">line_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">trafo_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">bus_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="n">cmap</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;jet&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Plot the network scheme in a Plotly figure, displaying short-circuit results.</span>
+<span class="sd">    </span>
+<span class="sd">    The lines and transformers are colored based on short-circuit in kA.</span>
+<span class="sd">    Note that if the network does not contain geo data, it will be automatically created using the `igraph library &lt;https://python.igraph.org/en/stable/&gt;`_.</span>
+<span class="sd">    This algorithm does not generate good geo data if the network is meshed.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        pandaPower network object with short-circuit results stored.</span>
+<span class="sd">        Short-circuit simulations are described in `pandaPower short-circuit docs &lt;https://pandapower.readthedocs.io/en/v2.13.1/shortcircuit.html&gt;`_.</span>
+<span class="sd">    </span>
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    filename : str, None, optional</span>
+<span class="sd">        File name under which the plotly figure will be stored (in `png` format).</span>
+<span class="sd">        If this parameter is not filled, the function will only display the figure without saving it.</span>
+<span class="sd">    folder : str, optional</span>
+<span class="sd">        Folder name where the plotly figure will be stored.</span>
+<span class="sd">    plot_title : str, None, optional</span>
+<span class="sd">        Title displayed on the top of the figure.</span>
+<span class="sd">    line_width : int, 3, optional</span>
+<span class="sd">        Transmission lines drawing width.</span>
+<span class="sd">    trafo_width : int, 7, optional</span>
+<span class="sd">        Transformers drawing width.</span>
+<span class="sd">    bus_size : int, 20, optional</span>
+<span class="sd">        Bus drawing size.</span>
+<span class="sd">    cmap : str, optional</span>
+<span class="sd">        Name of a plotly Continuous Color Scales used to display short-circuit results (Greys, YlGnBu, Greens, YlOrRd,</span>
+<span class="sd">        Bluered, RdBu, Reds, Blues, Picnic, Rainbow, Portland, Jet, Hot, Blackbody, Earth, Electric, Viridis).</span>
+<span class="sd">        Further explanation are founded in `plotly docs &lt;https://plotly.com/python/builtin-colorscales/?_ga=2.67899217.1309821379.1693317794-265230606.1688628396&gt;`_.</span>
+<span class="sd">    **kwargs : dict</span>
+<span class="sd">        Every parameter found in save_fig function could also be added if needed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">net_copy</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">net</span><span class="p">)</span>
+    <span class="n">traces</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Generate bus geodata if needed</span>
+    <span class="k">if</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="n">pplotly</span><span class="o">.</span><span class="n">create_generic_coordinates</span><span class="p">(</span><span class="n">net</span><span class="o">=</span><span class="n">net_copy</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="c1"># Rotate figure</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">]]</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">bus_geodata</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span> <span class="o">*=-</span><span class="mi">1</span>
+
+
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_trafo_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">trafos</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">trafo</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">trafo_width</span><span class="p">,</span> <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Transformers&quot;</span>
+    <span class="p">)</span>
+
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_line_trace</span><span class="p">(</span><span class="n">net_copy</span><span class="p">,</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">line_width</span><span class="p">,</span>
+                                             <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Lines&quot;</span><span class="p">)</span>
+
+    <span class="n">bus_info</span> <span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="s2">&quot;ikss: &quot;</span> <span class="o">+</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">res_bus_sc</span><span class="o">.</span><span class="n">ikss_ka</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span> <span class="o">+</span>
+             <span class="s1">&#39; kA&lt;br&gt;ip: &#39;</span> <span class="o">+</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">res_bus_sc</span><span class="o">.</span><span class="n">ip_ka</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span> <span class="o">+</span> <span class="s1">&#39; kA&#39;</span>
+    <span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">patch_type</span><span class="o">=</span><span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mf">1.5</span><span class="o">*</span><span class="n">bus_size</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+        <span class="n">infofunc</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">ext_grid</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+        <span class="n">trace_name</span><span class="o">=</span><span class="s2">&quot;Ext grid&quot;</span>
+    <span class="p">)</span>
+    <span class="n">traces</span> <span class="o">+=</span> <span class="n">pplotly</span><span class="o">.</span><span class="n">create_bus_trace</span><span class="p">(</span>
+        <span class="n">net_copy</span><span class="p">,</span> <span class="n">buses</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">bus_size</span><span class="p">,</span> <span class="n">cmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">cmax</span><span class="o">=</span><span class="n">net_copy</span><span class="o">.</span><span class="n">res_bus_sc</span><span class="o">.</span><span class="n">ikss_ka</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">cmap_vals</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">net_copy</span><span class="o">.</span><span class="n">res_bus_sc</span><span class="o">.</span><span class="n">ikss_ka</span><span class="p">),</span>
+        <span class="n">infofunc</span><span class="o">=</span><span class="n">bus_info</span><span class="p">,</span> <span class="n">cbar_title</span><span class="o">=</span><span class="s1">&#39;Bus short circuit current [kA]&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">_draw_traces</span><span class="p">(</span><span class="n">traces</span><span class="p">,</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">save_fig</span><span class="p">(</span><span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span> <span class="n">plot_title</span><span class="o">=</span><span class="n">plot_title</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="plot_timestamps_powerflow_result">
+<a class="viewcode-back" href="../pp_heig_plot.html#pp_heig_plot.plot_timestamps_powerflow_result">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_timestamps_powerflow_result</span><span class="p">(</span>
+        <span class="n">net</span><span class="p">:</span> <span class="n">pp</span><span class="o">.</span><span class="n">pandapowerNet</span><span class="p">,</span> <span class="n">plot_time</span><span class="p">:</span> <span class="n">time</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;plot&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Plot network scheme in plotly figure, displaying the power flow results from a chosen timestamps.</span>
+<span class="sd">    </span>
+<span class="sd">    The function filter results from timeseries simulation to keep the wanted timestamps then run &quot;plot_powerflow_result&quot; function.</span>
+<span class="sd">    Note that if the network does not contain geo data, it will be automatically created using the `igraph library &lt;https://python.igraph.org/en/stable/&gt;`_.</span>
+<span class="sd">    This algorithm does not generate good geo data if the network is meshed.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    net : pandapower.pandapowerNet</span>
+<span class="sd">        pandaPower network object with time simulation powerflow results stored.</span>
+<span class="sd">        Powerflow simulations are described in `pandaPower time simulation powerflow docs &lt;https://pandapower.readthedocs.io/en/v2.13.1/powerflow.html&gt;`_.</span>
+<span class="sd">    plot_time : datetime.time</span>
+<span class="sd">        Timestep used to plot results.</span>
+<span class="sd">    </span>
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    filename : str, optional</span>
+<span class="sd">        File name under which the plotly figure will be stored (in `png` format).</span>
+<span class="sd">        If this parameter is not filled, the function will only display the figure without saving it.</span>
+<span class="sd">    folder : str, optional</span>
+<span class="sd">        Folder name where the plotly figure will be stored.</span>
+<span class="sd">    plot_title: str, optional</span>
+<span class="sd">        Title displayed on the top of the figure.</span>
+<span class="sd">    **kwargs : dict</span>
+<span class="sd">        Every parameter found in save_fig and `plot_powerflow_result` functions could also be added if needed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">net_copy</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">net</span><span class="p">)</span>
+    <span class="n">plot_title</span> <span class="o">=</span> <span class="s2">&quot;Powerflow results at &quot;</span> <span class="o">+</span> <span class="n">plot_time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Hh%M&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s2">&quot;output_writer&quot;</span> <span class="ow">in</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">ow</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">output_writer</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;object&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">output</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">net_copy</span><span class="o">.</span><span class="n">time_index</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">plot_time</span><span class="p">)</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">res_bus</span><span class="o">.</span><span class="n">vm_pu</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ow</span><span class="p">[</span><span class="s2">&quot;res_bus.vm_pu&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">res_line</span><span class="o">.</span><span class="n">loading_percent</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ow</span><span class="p">[</span><span class="s2">&quot;res_line.loading_percent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">net_copy</span><span class="o">.</span><span class="n">res_trafo</span><span class="o">.</span><span class="n">loading_percent</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ow</span><span class="p">[</span><span class="s2">&quot;res_trafo.loading_percent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">plot_powerflow_result</span><span class="p">(</span>
+            <span class="n">net</span><span class="o">=</span><span class="n">net_copy</span><span class="p">,</span> <span class="n">plot_title</span><span class="o">=</span><span class="n">plot_title</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;PandaPower network does not contain time simulation powerflow results&quot;</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="plot_timeseries_result">
+<a class="viewcode-back" href="../pp_heig_plot.html#pp_heig_plot.plot_timeseries_result">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_timeseries_result</span><span class="p">(</span>
+    <span class="n">data_df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">plot_title</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;plot&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;This function takes a pandas `DataFrame` as input and plots the timeseries of each column.</span>
+<span class="sd">    </span>
+<span class="sd">    It first creates a plotly figure object. Then, it iterates over the columns of the `DataFrame` and adds a line plot for each column.</span>
+<span class="sd">    The legend template of each line is customized to show the column name, the y-value, and the time for each point.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    data_df : pandas.DataFrame</span>
+<span class="sd">        DataFrame containing timeseries simulation results which will be plotted.</span>
+<span class="sd">    ylabel :</span>
+<span class="sd">        `y`-axis label</span>
+
+<span class="sd">    Other parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    plot_title : str, optional</span>
+<span class="sd">        Title displayed on the top of the figure.</span>
+<span class="sd">    filename : str, optional</span>
+<span class="sd">        File name under which the plotly figure will be stored (in `png` format).</span>
+<span class="sd">    folder : str, &quot;plot_folder&quot;, optional</span>
+<span class="sd">        Folder name where the plotly figure will be stored.</span>
+<span class="sd">    **kwargs : dict, optional</span>
+<span class="sd">        Every parameter found in save_fig function could also be added if needed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">hovertemplate</span> <span class="o">=</span> <span class="n">_bold</span><span class="p">(</span><span class="n">col</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> <span class="o">+</span> <span class="n">ylabel</span> <span class="o">+</span> <span class="s1">&#39;: %</span><span class="si">{y:.2f}</span><span class="s1">&lt;br&gt;Time: %</span><span class="si">{text}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&lt;extra&gt;&lt;/extra&gt;&#39;</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">x</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])),</span> <span class="n">y</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">data_df</span><span class="p">[</span><span class="n">col</span><span class="p">]),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">_bold</span><span class="p">(</span><span class="n">col</span><span class="p">),</span> <span class="n">hovertemplate</span><span class="o">=</span><span class="n">hovertemplate</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="n">_time_to_str</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="p">))</span>
+    <span class="n">x_ticks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))[::</span><span class="nb">int</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">6</span><span class="p">)]</span>
+    <span class="n">x_ticks_label</span> <span class="o">=</span> <span class="n">_time_to_str</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">index</span><span class="p">)[::</span><span class="nb">int</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">6</span><span class="p">)]</span>
+    <span class="n">save_fig</span><span class="p">(</span>
+        <span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span> <span class="s2">&quot;Time&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="n">ylabel</span><span class="p">,</span> <span class="n">plot_title</span><span class="o">=</span><span class="n">plot_title</span><span class="p">,</span>
+        <span class="n">x_ticks</span><span class="o">=</span><span class="p">(</span><span class="n">x_ticks</span><span class="p">,</span><span class="n">x_ticks_label</span><span class="p">),</span> <span class="n">show_grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+    <span class="p">)</span></div>
+
+
+
+<span class="k">def</span> <span class="nf">_draw_traces</span><span class="p">(</span><span class="n">traces</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">showlegend</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Figure</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Intern function used to create a plotly figure from a list of trace created by pandasPower using `create_bus_trace`, `create_line_trace` and `create_trafo_trace`.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    traces : list</span>
+<span class="sd">        List of dicts which correspond to plotly traces.</span>
+<span class="sd">    showlegend : bool</span>
+<span class="sd">        If it is true, legend of traces will be displayed.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    figure : graph_objs._figure.Figure</span>
+<span class="sd">        The figure object is returned.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">traces</span><span class="p">,</span>
+                 <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span>
+                     <span class="n">showlegend</span><span class="o">=</span><span class="n">showlegend</span><span class="p">,</span>
+                     <span class="n">hovermode</span><span class="o">=</span><span class="s1">&#39;closest&#39;</span><span class="p">,</span>
+                     <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+                     <span class="n">xaxis</span><span class="o">=</span><span class="n">XAxis</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+                                 <span class="n">showticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+                     <span class="n">yaxis</span><span class="o">=</span><span class="n">YAxis</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+                                 <span class="n">showticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+                     <span class="n">legend</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;itemsizing&#39;</span><span class="p">:</span> <span class="s1">&#39;constant&#39;</span><span class="p">},</span>
+                     <span class="p">),</span>
+                <span class="p">)</span>
+    <span class="k">return</span> <span class="n">fig</span>
+
+
+<div class="viewcode-block" id="save_fig">
+<a class="viewcode-back" href="../pp_heig_plot.html#pp_heig_plot.save_fig">[docs]</a>
+<span class="k">def</span> <span class="nf">save_fig</span><span class="p">(</span>
+        <span class="n">fig</span><span class="p">:</span> <span class="n">Figure</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">folder</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;plot&quot;</span><span class="p">,</span> <span class="n">plot_title</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">xlabel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+        <span class="n">x_ticks</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">y_ticks</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">680</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">400</span><span class="p">,</span> <span class="n">title_x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">title_y</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.97</span><span class="p">,</span>
+        <span class="n">legend_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">tick_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">axis_title_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="n">title_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">show_grid</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">show_fig</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Intern function used to format plotly layout, save and display figure.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    fig : graph_objs._figure.Figure</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    filename : str, optional</span>
+<span class="sd">        File name under which the plotly figure will be stored (in `.png` format).</span>
+<span class="sd">    folder : str, &quot;plot&quot;</span>
+<span class="sd">        Folder name where the plotly figure will be stored.</span>
+<span class="sd">    plot_title : str, optional</span>
+<span class="sd">        Title displayed on the top of the figure.</span>
+<span class="sd">    xlabel : str, optional</span>
+<span class="sd">        `x`-axis label.</span>
+<span class="sd">    ylabel : str, optional</span>
+<span class="sd">        `y`-axis label.</span>
+<span class="sd">    x_ticks : tuple[list, list], optional</span>
+<span class="sd">        A pair of tick values and tick label for displaying `x`-axis.</span>
+<span class="sd">    y_ticks : tuple[list, list], optional</span>
+<span class="sd">        A pair of tick values and tick label for displaying `y`-axis.</span>
+<span class="sd">    width : int, 680, optional</span>
+<span class="sd">        Figure width (in pixels).</span>
+<span class="sd">    height : int, 400, optional</span>
+<span class="sd">        Figure height (in pixels).</span>
+<span class="sd">    title_x : float, 0.5, optional</span>
+<span class="sd">        Figure title `x`-axis location.</span>
+<span class="sd">    title_y : float, 0.97, optional</span>
+<span class="sd">        Figure title `y`-axis location.</span>
+<span class="sd">    legend_size : int, 12, optional</span>
+<span class="sd">        Legends characters size.</span>
+<span class="sd">    tick_size : int, 12, optional</span>
+<span class="sd">        Ticks characters size.</span>
+<span class="sd">    axis_title_size : int, 12, optional</span>
+<span class="sd">        Axis title characters size.</span>
+<span class="sd">    title_size : int, 15, optional</span>
+<span class="sd">        Figure title characters size.</span>
+<span class="sd">    show_grid : bool, False, optional</span>
+<span class="sd">        If it is `True`, add grid to the figure.</span>
+<span class="sd">    show_fig : bool, True, optional</span>
+<span class="sd">        If it is `True`, display figure in Jupyter notebook (usage with a `.py` file is not implemented).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">font</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="n">title_size</span><span class="p">},</span> <span class="n">xaxis_title</span><span class="o">=</span><span class="n">_bold</span><span class="p">(</span><span class="n">xlabel</span><span class="p">),</span> <span class="n">yaxis_title</span><span class="o">=</span><span class="n">_bold</span><span class="p">(</span><span class="n">ylabel</span><span class="p">),</span>
+        <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">tick_size</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s2">&quot;Arial Black&quot;</span><span class="p">),</span> <span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+        <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">tick_size</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s2">&quot;Arial Black&quot;</span><span class="p">),</span> <span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+        <span class="n">paper_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">height</span><span class="p">,</span>
+        <span class="n">xaxis_title_font</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="n">axis_title_size</span><span class="p">},</span> <span class="n">yaxis_title_font</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="n">axis_title_size</span><span class="p">},</span>
+        <span class="n">margin</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">),</span> <span class="n">legend</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;font&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="n">legend_size</span><span class="p">}}</span>
+    <span class="p">)</span>
+    <span class="k">if</span> <span class="n">x_ticks</span><span class="p">:</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">tickmode</span> <span class="o">=</span> <span class="s1">&#39;array&#39;</span><span class="p">,</span> <span class="n">tickvals</span> <span class="o">=</span> <span class="n">x_ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ticktext</span> <span class="o">=</span> <span class="n">x_ticks</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="n">y_ticks</span><span class="p">:</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">tickmode</span> <span class="o">=</span> <span class="s1">&#39;array&#39;</span><span class="p">,</span> <span class="n">tickvals</span> <span class="o">=</span> <span class="n">y_ticks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ticktext</span> <span class="o">=</span> <span class="n">y_ticks</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="n">show_grid</span><span class="p">:</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">),</span>
+            <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">showline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="n">plot_title</span><span class="p">:</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">_bold</span><span class="p">(</span><span class="n">plot_title</span><span class="p">),</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">title_y</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">title_x</span><span class="p">,</span> <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span><span class="p">},</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="n">filename</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">folder</span><span class="p">)</span>
+        <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="c1"># plotly.offline.plot(fig, filename=file_path + &quot;.html&quot;, auto_open=False)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file_path</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">show_fig</span><span class="p">:</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+
+<span class="k">def</span> <span class="nf">_bold</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Internal function to apply bold style to strings.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    string : str or None</span>
+<span class="sd">        Input string.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    bold_string : str or None</span>
+<span class="sd">        Input string with bold style applied.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;&lt;b&gt;&#39;</span> <span class="o">+</span> <span class="n">string</span> <span class="o">+</span> <span class="s1">&#39;&lt;b&gt;&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+<span class="k">def</span> <span class="nf">_time_to_str</span><span class="p">(</span><span class="n">time_stamps</span><span class="p">:</span> <span class="p">[</span><span class="n">time</span> <span class="o">|</span> <span class="n">datetime</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">|</span> <span class="nb">tuple</span> <span class="o">|</span> <span class="n">pd</span><span class="o">.</span><span class="n">Index</span> <span class="o">|</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Internal function used to convert datetime objects in wanted string format (i.e. &quot;12H00&quot;).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    time_stamps : datetime.time | datetime.datetime | list | tuple | pandas.Index | pandas.Series</span>
+<span class="sd">        Input datetime.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    str_time_stamps : str or list[str] or None</span>
+<span class="sd">        Datetime objects in wanted string format.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">time_stamps</span><span class="p">,</span> <span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">datetime</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">time_stamps</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Hh%M&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">time_stamps</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Index</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Hh%M&quot;</span><span class="p">),</span> <span class="n">time_stamps</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2023, HEIG-VD IE.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
